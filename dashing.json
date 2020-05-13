@@ -22,14 +22,16 @@
         "h2 code": {
             "type": "Class"
         },
-        "td.mth": [
+        "td.mth:not([data-skip])": [
             {
+                "attr": "data-qual-name",
                 "type": "Method",
                 "requiretext": "\\(",
                 "regexp": "\\(.*\\)",
                 "replacement": ""
             },
             {
+                "attr": "data-qual-name",
                 "type": "Property",
                 "requiretext": "^[^(]+$"
             }
@@ -70,10 +72,6 @@
             "replacement": ""
         }
     },
-    "ignore": [
-        "",
-        "(no methods)"
-    ],
     "icon32x32": "favicon.png",
     "allowJS": false,
     "ExternalURL": ""
