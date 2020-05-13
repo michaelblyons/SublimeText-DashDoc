@@ -81,7 +81,3 @@ def main():
 
 if __name__ == '__main__':
     sys.exit(main())
-    # "CREATE TABLE searchIndex(id INTEGER PRIMARY KEY, name TEXT, type TEXT, path TEXT)"
-    # "CREATE UNIQUE INDEX anchor ON searchIndex (name, type, path)"
-
-# TODO update selectors in dashing.json
