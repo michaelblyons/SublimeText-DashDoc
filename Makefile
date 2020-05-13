@@ -4,7 +4,7 @@ local_index := $(local_path)/docs/index.html
 built_path := ./sublime-text.docset
 
 .PHONY: all
-all: clean download fix build fix-build
+all: clean download pre-build build post-build
 
 .PHONY: download
 download:
@@ -13,7 +13,7 @@ download:
 		--recursive \
 		--page-requisites \
 		--no-parent \
-		--no-clobber \
+		--timestamping \
 		"$(source_link)"
 	# When /docs/ stops 3XXing to /docs/3/index.html, this and several
 	#  lines in 'fix' can be removed
@@ -23,7 +23,7 @@ download:
 		"$(source_link)"
 
 .PHONY: fix
-fix: fix-html fix-css
+pre-build: fix-html fix-css
 	-rm -r $(local_path)/docs/3
 
 .PHONY: fix-html
@@ -39,8 +39,8 @@ fix-css:
 build:
 	dashing build
 
-.PHONY: fix-build
-fix-build:
+.PHONY: post-build
+post-build:
 	find $(built_path) -iname '*.html' -exec \
 		sed -i -Ee 's#(<a [^>]+></a><a [^>]+></a>)(<td[^>]*>)#\2\1#g' {} \;
 
