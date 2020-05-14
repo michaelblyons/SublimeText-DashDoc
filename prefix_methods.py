@@ -16,6 +16,7 @@ from bs4 import BeautifulSoup
 API_PATH = "www.sublimetext.com/docs/api_reference.html"
 NAME_ATTR = "data-qual-name"
 SKIP_ATTR = "data-skip"
+FUNC_ATTR = "data-function"
 
 KEYWORD_MAP = {
     "Module": "module",
@@ -72,6 +73,9 @@ def main():
                 td[SKIP_ATTR] = 1
             else:
                 td[NAME_ATTR] = f"{namespace}.{td.get_text()}"
+                if code['class'] == 'module':
+                    td[FUNC_ATTR] = 1
+            
             print(f"{td}")
 
     with path.open('w', encoding='utf-8') as file:

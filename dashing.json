@@ -16,7 +16,14 @@
         "h2 code.module": "Module",
         "h2 code.class": "Class",
         "h2 code.type": "Type",
-        "td.mth:not([data-skip])": [
+        "td.mth:not([data-skip])[data-function]": {
+            "attr": "data-qual-name",
+            "type": "Function",
+            "requiretext": "\\(",
+            "regexp": "\\(.*\\)",
+            "replacement": ""
+        },
+        "td.mth:not([data-skip]):not([data-function])": [
             {
                 "attr": "data-qual-name",
                 "type": "Method",
