@@ -4,18 +4,21 @@
 
 ## Building
 
-## Requirements
+### Requirements
 
 * `make`
 * [`dashing`][dashing]
 * `sed` (with `-E` support), `find`, `wget`
+* Python 3.8+
 
-## Steps
+### Steps
 
+0. (Optional) Enter a Python virtual environment.
 1.
-    ``` sh
-    make
-    ```
+   ``` sh
+   pip install -r requirements.txt
+   make
+   ```
 
 ## Installation
 

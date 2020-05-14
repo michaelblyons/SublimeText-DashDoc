@@ -31,6 +31,7 @@ fix-html:
 	sed -i -e 's/\(href="\)https:\/\/www.sublimetext.com\/docs\//\1/g' $(local_index)
 	sed -i -e 's/\(href="\)https:\/\/www.sublimetext.com\/\(.*\.css\)/\1..\/\2/g' $(local_index)
 	find $(local_path) -iname '*.html' -exec sed -i -e '/<header>/,/<\/header>/d' {} \;
+	python prefix_methods.py
 
 .PHONY: fix-css
 fix-css:

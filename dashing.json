@@ -8,28 +8,31 @@
             "regexp": " [–-] Sublime Text(?: Documentation)?",
             "replacement": ""
         },
-        "section.wide > h2": [
-            {
-                "type": "Module",
-                "requiretext": "Module"
-            }
-        ],
-        ":not(section.wide) > h2": {
+        "section:not(.wide) > h2": {
             "type": "Section",
             "regexp": "\\s*\\d+$",
             "replacement": ""
         },
-        "h2 code": {
-            "type": "Class"
+        "h2 code.module": "Module",
+        "h2 code.class": "Class",
+        "h2 code.type": "Type",
+        "td.mth:not([data-skip])[data-function]": {
+            "attr": "data-qual-name",
+            "type": "Function",
+            "requiretext": "\\(",
+            "regexp": "\\(.*\\)",
+            "replacement": ""
         },
-        "td.mth": [
+        "td.mth:not([data-skip]):not([data-function])": [
             {
+                "attr": "data-qual-name",
                 "type": "Method",
                 "requiretext": "\\(",
                 "regexp": "\\(.*\\)",
                 "replacement": ""
             },
             {
+                "attr": "data-qual-name",
                 "type": "Property",
                 "requiretext": "^[^(]+$"
             }
@@ -70,10 +73,6 @@
             "replacement": ""
         }
     },
-    "ignore": [
-        "",
-        "(no methods)"
-    ],
     "icon32x32": "favicon.png",
     "allowJS": false,
     "ExternalURL": ""
