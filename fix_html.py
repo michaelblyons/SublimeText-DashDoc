@@ -26,6 +26,10 @@ def delete_skins(soup):
             continue
         h1_version.decompose()
 
+    twitter = soup.find('div', class_='twitter_follow')
+    if twitter:
+        twitter.decompose()
+
 
 def remove_link_icon(soup):
     """Drop the permalink icon"""
