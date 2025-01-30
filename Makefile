@@ -21,14 +21,14 @@ pre-build: fix-html fix-css
 
 .PHONY: fix-html
 fix-html:
-	find $(local_path) -iname '*.html' -exec sed -i -e '/<header>/,/<\/header>/d' {} \;
-	python prefix_methods.py
+	python fix_html.py
 
 .PHONY: fix-css
 fix-css:
 	$(shell for f in $$(ls $(local_path)/*.css\?*); do mv "$$f" "$${f%\?*}"; done )
 
 build:
+	yq -j . dashing.yml > dashing.json
 	dashing build
 
 .PHONY: post-build
