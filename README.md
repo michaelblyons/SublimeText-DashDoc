@@ -1,6 +1,7 @@
 # Sublime Text Docset
 
-[Dash][]/[Zeal][] docset for [Sublime Text][st]’s official [documentation][st-docs].
+[Dash][] and [Zeal][] docset for [Sublime Text][st]’s official
+[documentation][st-docs].
 
 ## Building
 
@@ -8,6 +9,7 @@
 
 * `make`
 * [`dashing`][dashing]
+* `yq`
 * `sed` (with `-E` support), `find`, `wget`
 * Python 3.8+
 
@@ -29,7 +31,7 @@
 1. Open the "Docsets" tab.
 1. Click the <kbd>+</kbd>.
 1. Choose "Add Local Docset".
-1. Select the `sublime-text.docset` in this folder.
+1. Select the `sublime-text.docset` in the `www.sublimetext.com` folder.
 1. Optionally change the keyword.
 
 ### Zeal locally-built docset
