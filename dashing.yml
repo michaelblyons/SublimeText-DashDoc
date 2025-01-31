@@ -154,11 +154,22 @@ selectors:
 
 ###[ COLOR SCHEMES ]###########################################################
 
-  # TODO: Lots of stuff
+  # Color functions
+  '#colors li b':
+    type: Function
+    matchpath: '/color_schemes\.html$'
+
+  # Font Styles
+  'dt#font-style dd li code':
+    type: Value
+    matchpath: '/color_schemes\.html$'
+
+  # CSS Colors
+  '#appendix-css-colors li span:not(.color-block)':
+    type: Value
+    matchpath: '/color_schemes\.html$'
 
 ###[ THEMES ]##################################################################
-
-  # TODO: Lots of stuff
 
   # Properties
   'dl.themeprop > dt':
@@ -170,10 +181,11 @@ selectors:
     type: Element
     matchpath: '/themes\.html$'
 
-  # # Element properties
-  # 'dl.themeclass dl dt':
-  #   type: Property
-  #   matchpath: '/themes\.html$'
+  # Element properties
+  # TODO: Maybe split these into attributes and properties
+  'dl.themeclass > dd > dl dt code':
+    type: Property
+    matchpath: '/themes\.html$'
 
 ###[ MENUS ]###################################################################
 
@@ -229,7 +241,15 @@ selectors:
 
 ###[ SYNTAX DEFINITIONS ]######################################################
 
-  # TODO: Lots of stuff
+  # Syntax
+  'dl.setting span.pre':
+    type: Instruction
+    matchpath: '/syntax\.html$'
+
+  # Index tests
+  '#testing ul > li > p > code:first-child':
+    type: Test
+    matchpath: '/syntax\.html$'
 
 ###[ SCOPE NAMING ]############################################################
 
@@ -240,6 +260,15 @@ selectors:
 
 ###[ MINIHTML REFERENCE ]######################################################
 
-  # TODO: Lots of stuff
+  # Elements
+  '#tags li > code':
+    type: Element
+    requiretext: '<.+>'
+    matchpath: '/minihtml\.html$'
+
+  # CSS styles
+  '#css li code:first-child':
+    type: Style
+    matchpath: '/minihtml\.html$'
 
 ###[ PLUGIN PORTING GUIDE ]####################################################
