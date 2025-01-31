@@ -25,7 +25,8 @@ fix-html:
 
 .PHONY: fix-css
 fix-css:
-	$(shell for f in $$(ls $(local_path)/*.css\?*); do mv "$$f" "$${f%\?*}"; done )
+	$(shell for f in $$(ls $(local_path)/*.*\?*); do mv "$$f" "$${f%\?*}"; done )
+	$(shell for f in $$(ls $(local_path)/**/*.*\?*); do mv "$$f" "$${f%\?*}"; done )
 
 build:
 	yq -j . dashing.yml > $(local_path)/dashing.json
