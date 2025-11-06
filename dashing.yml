@@ -30,7 +30,7 @@ selectors:
   'dl.setting > dt[id]':
     attr: id
     type: Setting
-    matchpath: '\.html$'
+    matchpath: '(?<!build_systems)\.html$'
 
 ###[ TAB MULTI-SELECT ]########################################################
 ###[ GIT INTEGRATION ]#########################################################
@@ -107,7 +107,11 @@ selectors:
 
 ###[ BUILD SYSTEMS ]###########################################################
 
-  # TODO: Some build system Options are listed as Settings by global rules
+  # Options
+  'dl.setting > dt[id]':
+    attr: id
+    type: Option
+    matchpath: '/build_systems\.html$'
 
   # Variables
   '#variables table code':
