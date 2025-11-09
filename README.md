@@ -38,7 +38,6 @@ We hope to have a distribution channel [eventually][distribution].
 * `make`
 * [`dashing`][dashing]
 * `yq`
-* `wget`
 * Python 3.8+
 
 ### Steps
