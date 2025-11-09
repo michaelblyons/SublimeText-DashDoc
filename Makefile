@@ -1,9 +1,20 @@
-submodule_path := SublimeText_Documentation
-local_path := $(submodule_path)/www.sublimetext.com
-local_index := $(local_path)/docs/index.html
-docset := sublime-text.docset
-dashing_json := $(local_path)/dashing.json
-built_path := $(local_path)/$(docset)
+# Shared
+out_folder := out
+install_path_linux := ~/.local/share/Zeal/Zeal/docsets
+
+# Sublime Text
+st_submodule := sublime-text
+st_site := $(st_submodule)/www.sublimetext.com
+st_site_index := $(st_site)/docs/index.html
+st_docset := sublime-text.docset
+st_built_path := $(st_site)/$(st_docset)
+
+# Sublime Merge
+sm_submodule := sublime-merge
+sm_site := $(sm_submodule)/www.sublimemerge.com
+sm_site_index := $(sm_site)/docs/index.html
+sm_docset := sublime-merge.docset
+sm_built_path := $(sm_site)/$(sm_docset)
 
 .PHONY: all
 all: clean pre-build build
@@ -16,12 +27,23 @@ fix-html:
 	python fix_html.py
 
 build:
-	yq -j . dashing.yml > $(dashing_json)
-	cd $(local_path) \
-	&& dashing build
+	# Shared
+	mkdir -p $(out_folder)
+	# Sublime Text
+	yq -j . sublime-text-dashing.yml > $(st_site)/dashing.json
+	cd $(st_site) && dashing build
+	mv $(st_built_path) $(out_folder)
+	# Sublime Merge
+	yq -j . sublime-merge-dashing.yml > $(sm_site)/dashing.json
+	cd $(sm_site) && dashing build
+	mv $(sm_built_path) $(out_folder)
 
 .PHONY: clean
 clean:
-	[ -d "$(built_path)" ] && rm -r $(built_path) || true
-	[ -f "$(dashing_json)" ] && rm $(dashing_json) || true
-	git restore $(submodule_path) --recurse-submodules
+	[ -d "$(out_folder)" ] && rm -r $(out_folder) || true
+	[ -f "$(st_site)/dashing.json" ] && rm $(st_site)/dashing.json || true
+	[ -f "$(sm_site)/dashing.json" ] && rm $(sm_site)/dashing.json || true
+	git restore --recurse-submodules $(st_submodule) $(sm_submodule)
+
+install-linux:
+	cp -r $(out_folder)/* $(install_path_linux)
