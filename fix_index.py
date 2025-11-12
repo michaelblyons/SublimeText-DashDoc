@@ -8,7 +8,7 @@ import sqlite3
 
 SQLITE_PATH_FMT = 'out/{}/Contents/Resources/docSet.dsidx'
 DOCSET_FIXES = {
-    'Sublime_Text.docset': [
+    'sublime-text.docset': [
         ('docs/distraction_free.html',
          'Packages/Default/Distraction\nFree.sublime-settings',
          'Packages/Default/Distraction Free.sublime-settings',),
@@ -22,7 +22,7 @@ DOCSET_FIXES = {
          'subl--safe-mode',
          'subl --safe-mode', ),
     ],
-    'Sublime_Merge.docset': []
+    'sublime-merge.docset': []
 }
 
 
