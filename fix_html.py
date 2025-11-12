@@ -10,8 +10,8 @@ from re import sub
 from bs4 import BeautifulSoup
 
 DOC_ROOTS = [
-    'sublime-text/www.sublimetext.com/docs',
-    'sublime-merge/www.sublimemerge.com/docs',
+    'Sublime_Text/www.sublimetext.com/docs',
+    'Sublime_Merge/www.sublimemerge.com/docs',
 ]
 
 

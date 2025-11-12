@@ -1,8 +1,8 @@
-[submodule "sublime-text"]
-	path = sublime-text
+[submodule "Sublime_Text"]
+	path = Sublime_Text
 	url = https://github.com/maliayas/SublimeText_Documentation
 	ignore = dirty
-[submodule "sublime-merge"]
-	path = sublime-merge
+[submodule "Sublime_Merge"]
+	path = Sublime_Merge
 	url = https://github.com/maliayas/SublimeMerge_Documentation
 	ignore = dirty

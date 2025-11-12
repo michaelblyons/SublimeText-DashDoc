@@ -3,14 +3,14 @@ out_folder := out
 install_path_linux := ~/.local/share/Zeal/Zeal/docsets
 
 # Sublime Text
-st_submodule := sublime-text
+st_submodule := Sublime_Text
 st_site := $(st_submodule)/www.sublimetext.com
 st_site_index := $(st_site)/docs/index.html
 st_docset := sublime-text.docset
 st_built_path := $(st_site)/$(st_docset)
 
 # Sublime Merge
-sm_submodule := sublime-merge
+sm_submodule := Sublime_Merge
 sm_site := $(sm_submodule)/www.sublimemerge.com
 sm_site_index := $(sm_site)/docs/index.html
 sm_docset := sublime-merge.docset
@@ -45,8 +45,8 @@ clean:
 	git restore --recurse-submodules $(st_submodule) $(sm_submodule)
 
 zip:
-	cd $(out_folder) && tar -czvf $(st_docset).tgz $(st_docset)
-	cd $(out_folder) && tar -czvf $(sm_docset).tgz $(sm_docset)
+	cd $(out_folder) && tar -czvf $(st_submodule).tgz $(st_docset)
+	cd $(out_folder) && tar -czvf $(sm_submodule).tgz $(sm_docset)
 
 .PHONY: test
 test:
