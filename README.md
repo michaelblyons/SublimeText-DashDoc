@@ -62,9 +62,9 @@ If you have default Linux folders, `make install-linux`. Otherwise:
 
 ## Credits
 
-- @malexer made the first version of this docset.
-- @maliayas made the ST and SM docs scanners used here as submodules.
-- Most recent development is @michaelblyons and @FichteFoll.
+- [Alex (Oleksii) Markov][malexer] made the first version of this docset.
+- [Ali Ayas][maliayas] made the ST and SM docs scanners used here as submodules.
+- Most recent development is [Michael B. Lyons][michaelblyons] and [FichteFoll][].
 
 
 [self]: https://github.com/SublimeText/sublime-text-docset
@@ -75,3 +75,8 @@ If you have default Linux folders, `make install-linux`. Otherwise:
 [sm]: https://www.sublimemerge.com/
 [dashing]: https://github.com/technosophos/dashing#readme
 [distribution]: https://github.com/SublimeText/sublime-text-docset/issues/12
+
+[malexer]: https://github.com/malexer
+[maliayas]: https://github.com/maliayas
+[michaelblyons]: https://github.com/michaelblyons
+[fichtefoll]: https://github.com/FichteFoll
