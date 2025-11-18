@@ -16,25 +16,26 @@ We hope to have a distribution channel [eventually][distribution].
 
 ### Install a local folder to Dash
 
-It may be possible to just double-click `sublime-text.docset`,
-but that hasn't been tested. If that doesn't work:
+It may be possible to just double-click `sublime-text.docset`.
+If that doesn't work:
 
 1. Open Dash.
 1. <kbd>Cmd</kbd>+<kbd>,</kbd>
 1. Open the "Docsets" tab.
 1. Click the <kbd>+</kbd>.
 1. Choose "Add Local Docset".
-1. Select the `sublime-text.docset` in the `out` folder.
+1. Select `sublime-text.docset`.
 1. Optionally change the keyword.
-1. Repeat for `out/sublime-merge.docset`.
+1. Repeat for `sublime-merge.docset`.
 
 ###  Install a local folder to Zeal
 
-If you have default Linux folders, `make install-linux`. Otherwise:
+If you built yourself and you have default Linux folders,
+just `make install-linux`. Otherwise:
 
-1. Find your docset folder ("Docset storage" in your Preferences)
-1. Copy or symlink `out/sublime-text.docset` to that folder.
-1. Repeat for `out/sublime-merge.docset`
+1. Find your docset folder ("Docset storage" in your Preferences).
+1. Copy or symlink `sublime-text.docset` to that folder.
+1. Repeat for `sublime-merge.docset`.
 
 
 ## Building
