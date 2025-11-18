@@ -20,22 +20,21 @@ sm_built_path := $(sm_site)/$(sm_docset)
 all: clean pre-build build post-build test
 
 pre-build:
-	python fix_html.py
+	cd src && python fix_html.py
 
 build:
 	# Shared
 	mkdir -p $(out_folder)
+	cd src && python generate_dashing.py
 	# Sublime Text
-	yq -j . sublime-text-dashing.yml > $(st_site)/dashing.json
 	cd $(st_site) && dashing build
 	mv $(st_built_path) $(out_folder)
 	# Sublime Merge
-	yq -j . sublime-merge-dashing.yml > $(sm_site)/dashing.json
 	cd $(sm_site) && dashing build
 	mv $(sm_built_path) $(out_folder)
 
 post-build:
-	python fix_index.py
+	cd src && python fix_index.py
 
 .PHONY: clean
 clean:
