@@ -6,16 +6,34 @@
 
 ## Installation
 
+### Install from a feed
+This is likely more convenient because updates will be downloaded
+to your application automatically.
+
+#### Dash
+Dash has built-in support for their user-contributed docsets.
+Go to *Preferences* > *Downloads* > *User Contributed*\
+to search for "Sublime" and install the community-org maintained ones.
+
+#### Zeal
+Zeal does not have a direct search for user-contrib docsets.
+You can use [this third-party site][vercel]
+to [search for Sublime docsets][vercel-search]
+and either use the repackaged Feed URL or one of the ones
+direct from Kapeli in your region.
+
+In Zeal, go to *Tools* > *Docsets&hellip;* > *Add feed*
+and paste in the URL.
+
+
+### Install manually
 Download from GitHub Releases or build yourself with the instructions below.
 
 - If you have a `docset-bundle.zip` from GitHub, extract it somewhere.
 - If you build yourself, `sublime-text.docset` will be in the
 `out` folder.
 
-We hope to have a distribution channel [eventually][distribution].
-
-### Install a local folder to Dash
-
+#### Install a local folder to Dash
 It may be possible to just double-click `sublime-text.docset`.
 If that doesn't work:
 
@@ -28,8 +46,7 @@ If that doesn't work:
 1. Optionally change the keyword.
 1. Repeat for `sublime-merge.docset`.
 
-###  Install a local folder to Zeal
-
+####  Install a local folder to Zeal
 If you built yourself and you have default Linux folders,
 just `make install-linux`. Otherwise:
 
@@ -73,8 +90,9 @@ just `make install-linux`. Otherwise:
 [st]: https://www.sublimetext.com/
 [st-docs]: https://www.sublimetext.com/docs/index.html
 [sm]: https://www.sublimemerge.com/
+[vercel]: https://zealusercontributions.vercel.app
+[vercel-search]: https://zealusercontributions.vercel.app/search?q=sublime+community
 [dashing]: https://github.com/technosophos/dashing#readme
-[distribution]: https://github.com/SublimeText/sublime-text-docset/issues/12
 
 [malexer]: https://github.com/malexer
 [maliayas]: https://github.com/maliayas
