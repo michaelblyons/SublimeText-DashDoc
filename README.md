@@ -79,6 +79,7 @@ just `make install-linux`. Otherwise:
 - [Alex (Oleksii) Markov][malexer] made the first version of this docset.
 - [Ali Ayas][maliayas] made the ST and SM docs scanners used here as submodules.
 - Most recent development is [Michael B. Lyons][michaelblyons] and [FichteFoll][].
+- Many thanks to [Sublime HQ][shq] for [letting us][permission] make this.
 
 
 [self]: https://github.com/SublimeText/sublime-text-docset
@@ -97,3 +98,5 @@ just `make install-linux`. Otherwise:
 [maliayas]: https://github.com/maliayas
 [michaelblyons]: https://github.com/michaelblyons
 [fichtefoll]: https://github.com/FichteFoll
+[shq]: https://www.sublimehq.com
+[permission]: https://github.com/SublimeText/sublime-text-docset/issues/10
