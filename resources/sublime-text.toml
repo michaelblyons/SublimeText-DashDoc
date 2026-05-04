@@ -317,7 +317,7 @@ type = 'Test'
 
 [[selectors.scope_naming]]
 # Scope names as Tags
-css = 'ul.simple li code'
+css = '#alphabetical-reference ul.simple li code'
 type = 'Tag'
 
 

@@ -1025,14 +1025,12 @@ docs/safe_mode.html,Section,Starting,1
 docs/scope_naming.html,Guide,Scope Naming,1
 docs/scope_naming.html,Section,Color Schemes,1
 docs/scope_naming.html,Section,Syntax Definitions,1
-docs/scope_naming.html,Tag,comment,1
 docs/scope_naming.html,Tag,comment.block,1
 docs/scope_naming.html,Tag,comment.block.documentation,1
 docs/scope_naming.html,Tag,comment.line,1
-docs/scope_naming.html,Tag,constant,1
-docs/scope_naming.html,Tag,constant.character.escape,2
-docs/scope_naming.html,Tag,constant.language,2
-docs/scope_naming.html,Tag,constant.numeric,2
+docs/scope_naming.html,Tag,constant.character.escape,1
+docs/scope_naming.html,Tag,constant.language,1
+docs/scope_naming.html,Tag,constant.numeric,1
 docs/scope_naming.html,Tag,constant.numeric.complex,1
 docs/scope_naming.html,Tag,constant.numeric.complex.imaginary,1
 docs/scope_naming.html,Tag,constant.numeric.complex.real,1
@@ -1050,7 +1048,6 @@ docs/scope_naming.html,Tag,constant.numeric.integer.octal,1
 docs/scope_naming.html,Tag,constant.numeric.integer.other,1
 docs/scope_naming.html,Tag,constant.other,1
 docs/scope_naming.html,Tag,constant.other.placeholder,1
-docs/scope_naming.html,Tag,entity.name,1
 docs/scope_naming.html,Tag,entity.name.class,1
 docs/scope_naming.html,Tag,entity.name.class.forward-decl,1
 docs/scope_naming.html,Tag,entity.name.constant,1
@@ -1062,23 +1059,20 @@ docs/scope_naming.html,Tag,entity.name.impl,1
 docs/scope_naming.html,Tag,entity.name.interface,1
 docs/scope_naming.html,Tag,entity.name.label,1
 docs/scope_naming.html,Tag,entity.name.namespace,1
-docs/scope_naming.html,Tag,entity.name.section,2
+docs/scope_naming.html,Tag,entity.name.section,1
 docs/scope_naming.html,Tag,entity.name.struct,1
-docs/scope_naming.html,Tag,entity.name.tag,2
+docs/scope_naming.html,Tag,entity.name.tag,1
 docs/scope_naming.html,Tag,entity.name.trait,1
 docs/scope_naming.html,Tag,entity.name.type,1
 docs/scope_naming.html,Tag,entity.name.union,1
-docs/scope_naming.html,Tag,entity.other.attribute-name,2
-docs/scope_naming.html,Tag,entity.other.inherited-class,2
-docs/scope_naming.html,Tag,invalid,1
-docs/scope_naming.html,Tag,invalid.deprecated,2
+docs/scope_naming.html,Tag,entity.other.attribute-name,1
+docs/scope_naming.html,Tag,entity.other.inherited-class,1
+docs/scope_naming.html,Tag,invalid.deprecated,1
 docs/scope_naming.html,Tag,invalid.illegal,1
-docs/scope_naming.html,Tag,keyword,1
-docs/scope_naming.html,Tag,keyword.control,2
+docs/scope_naming.html,Tag,keyword.control,1
 docs/scope_naming.html,Tag,keyword.control.conditional,1
 docs/scope_naming.html,Tag,keyword.control.import,1
-docs/scope_naming.html,Tag,keyword.declaration,1
-docs/scope_naming.html,Tag,keyword.operator,2
+docs/scope_naming.html,Tag,keyword.operator,1
 docs/scope_naming.html,Tag,keyword.operator.arithmetic,1
 docs/scope_naming.html,Tag,keyword.operator.assignment,1
 docs/scope_naming.html,Tag,keyword.operator.bitwise,1
@@ -1153,8 +1147,8 @@ docs/scope_naming.html,Tag,punctuation.separator.continuation,1
 docs/scope_naming.html,Tag,punctuation.terminator,1
 docs/scope_naming.html,Tag,source,1
 docs/scope_naming.html,Tag,source.*language-suffix*.embedded,1
-docs/scope_naming.html,Tag,storage.modifier,2
-docs/scope_naming.html,Tag,storage.type,2
+docs/scope_naming.html,Tag,storage.modifier,1
+docs/scope_naming.html,Tag,storage.type,1
 docs/scope_naming.html,Tag,storage.type keyword.declaration.type,1
 docs/scope_naming.html,Tag,storage.type.class keyword.declaration.class,1
 docs/scope_naming.html,Tag,storage.type.enum keyword.declaration.enum,1
@@ -1164,14 +1158,12 @@ docs/scope_naming.html,Tag,storage.type.interface keyword.declaration.interface,
 docs/scope_naming.html,Tag,storage.type.struct keyword.declaration.struct,1
 docs/scope_naming.html,Tag,storage.type.trait keyword.declaration.trait,1
 docs/scope_naming.html,Tag,storage.type.union keyword.declaration.union,1
-docs/scope_naming.html,Tag,string,1
 docs/scope_naming.html,Tag,string.quoted.double,1
 docs/scope_naming.html,Tag,string.quoted.other,1
 docs/scope_naming.html,Tag,string.quoted.single,1
 docs/scope_naming.html,Tag,string.quoted.triple,1
 docs/scope_naming.html,Tag,string.regexp,1
 docs/scope_naming.html,Tag,string.unquoted,1
-docs/scope_naming.html,Tag,support,1
 docs/scope_naming.html,Tag,support.class,1
 docs/scope_naming.html,Tag,support.constant,1
 docs/scope_naming.html,Tag,support.function,1
@@ -1179,15 +1171,14 @@ docs/scope_naming.html,Tag,support.module,1
 docs/scope_naming.html,Tag,support.type,1
 docs/scope_naming.html,Tag,text.html,1
 docs/scope_naming.html,Tag,text.xml,1
-docs/scope_naming.html,Tag,variable,1
 docs/scope_naming.html,Tag,variable.annotation,1
-docs/scope_naming.html,Tag,variable.function,2
-docs/scope_naming.html,Tag,variable.language,2
+docs/scope_naming.html,Tag,variable.function,1
+docs/scope_naming.html,Tag,variable.language,1
 docs/scope_naming.html,Tag,variable.other,1
 docs/scope_naming.html,Tag,variable.other.constant,1
 docs/scope_naming.html,Tag,variable.other.member,1
 docs/scope_naming.html,Tag,variable.other.readwrite,1
-docs/scope_naming.html,Tag,variable.parameter,2
+docs/scope_naming.html,Tag,variable.parameter,1
 docs/selectors.html,Guide,Selectors,1
 docs/selectors.html,Section,Basic Matching,1
 docs/selectors.html,Section,Logical Operators,1
